@@ -31,6 +31,27 @@
         <img :key="currentImage" :src="images[currentImage]" alt="Perfect Chord Image" />
       </transition>
     </div>
+    <div class="best-sellers">
+      <h2>Lo más vendido</h2>
+      <div class="best-sellers-images">
+        <div class="best-seller-item">
+          <img src="@/assets/orange.jpg" alt="Producto 1" />
+          <p>Crush Pro 120</p>
+        </div>
+        <div class="best-seller-item">
+          <img src="@/assets/bcrich.jpg" alt="Producto 2" />
+          <p>B.C Rich</p>
+        </div>
+        <div class="best-seller-item">
+          <img src="@/assets/taylor.jpg" alt="Producto 3" />
+          <p>Taylor 514ce</p>
+        </div>
+        <div class="best-seller-item">
+          <img src="@/assets/mastersound.jpg" alt="Producto 4" />
+          <p>Zildjian mastersound</p>
+        </div>
+      </div>
+    </div>
     <div class="about-us" id="acerca-de-nosotros">
       <h2>Acerca de nosotros</h2>
       <p>
@@ -87,21 +108,21 @@ body {
   font-family: 'Lato', sans-serif;
 }
 .about-us {
-  background-color: white; /* Fondo blanco */
+  background-color: #F6F5F2; /* Fondo blanco */
   padding: 20px;
   text-align: justify;
-  margin-top: 20px; /* Espacio superior */
+  
 }
 
 .about-us h2 {
   font-size: 24px;
   text-align: center;
-  color: #333; /* Color de texto */
+  color: black; /* Color de texto */
 }
 
 .about-us p {
   font-size: 18px;
-  color: #333; /* Color de texto */
+  color: black; /* Color de texto */
 }
 .header {
   background-color: #E3BD13; /* Fondo amarillo mostaza */
@@ -125,7 +146,7 @@ body {
 
 /* Estilos CSS para la imagen */
 img {
-  max-width: 100%; /* Asegura que la imagen sea más ancha que el contenedor */
+  max-width: 100%; 
   height: auto;
   transition: transform 2s ease; /* Duración de la animación y tipo de transición */
 }
@@ -224,6 +245,47 @@ img {
   height: 20%;
   box-sizing: border-box;
   padding: 10px 0;
+}
+
+.best-sellers {
+  background-color: #000; /* Fondo blanco */
+  padding: 20px;
+  text-align: center;
+  margin-top: 20px; /* Espacio superior */
+}
+
+.best-sellers h2 {
+  font-size: 26px;
+  text-align: center;
+  color: white; /* Color de texto */
+}
+
+.best-sellers-images {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.best-seller-item {
+  text-align: center;
+}
+
+.best-seller-item img {
+  max-width: 100%; /* Asegura que las imágenes no sean muy grandes */
+  height: auto;
+  margin-bottom: 10px;
+  padding: 5px; /* Espaciado alrededor de las imágenes */
+  filter: grayscale(0%); /* Aplica el filtro de opacidad gris */
+  transition: filter 0.3s ease;
+}
+
+.best-seller-item img:hover {
+  filter: grayscale(60%); /* Elimina el filtro al pasar el mouse sobre la imagen */
+}
+
+.best-seller-item p {
+  font-size: 18px;
+  color: white; /* Color de texto */
 }
 
 </style>
