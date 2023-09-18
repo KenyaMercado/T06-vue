@@ -32,7 +32,7 @@
       </transition>
     </div>
     <div class="best-sellers">
-      <h2>Lo más vendido</h2>
+      <h2>Los más vendidos</h2>
       <div class="best-sellers-images">
         <div class="best-seller-item">
           <img src="@/assets/orange.jpg" alt="Producto 1" />
@@ -271,7 +271,7 @@ img {
 }
 
 .best-seller-item img {
-  max-width: 100%; /* Asegura que las imágenes no sean muy grandes */
+  max-width: 100%; 
   height: auto;
   margin-bottom: 10px;
   padding: 5px; /* Espaciado alrededor de las imágenes */
